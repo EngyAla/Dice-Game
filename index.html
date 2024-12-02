@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Game</h1>
+        <div class="dice_img">
+            <img src="blackwhitedice.i02.2k.jpg" alt="dice" width="100">
+            <h1 id="random">0</h1>
+        </div>
+        <p>Click the button to roll the dice!</p>
+        <button onclick="roll()">click me</button>
+    </div>
+    <script>
+        function roll(){
+            var random = document.querySelector("#random")
+            random.innerHTML = Math.floor(Math.random() * 7)
+        }
+    </script>
+</body>
+</html>
